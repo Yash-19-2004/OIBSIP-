@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temperature Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>🌡 Temperature Converter</header>
+
+  <!-- Main 2-column layout -->
+  <main>
+    <!-- Left Info Section -->
+    <section class="info">
+      <h2>About Converter</h2>
+      <p>Convert temperatures easily between Celsius, Fahrenheit, and Kelvin. Enter a value, select a unit, and click Convert.</p>
+
+      <ul>
+        <li>✔ Instant conversion</li>
+        <li>✔ Celsius ⇆ Fahrenheit ⇆ Kelvin</li>
+        <li>✔ Professional 2-column layout</li>
+      </ul>
+
+      <h3>How to Use</h3>
+      <ol>
+        <li>Enter the temperature value in the input box.</li>
+        <li>Select the unit of your input (Celsius, Fahrenheit, or Kelvin).</li>
+        <li>Click "Convert" to see the result.</li>
+        <li>Click "Reset" to clear input and start over.</li>
+      </ol>
+
+      <h3>Conversion Formulas</h3>
+      <ul>
+        <li>°C → °F : (°C × 9/5) + 32</li>
+        <li>°F → °C : (°F − 32) × 5/9</li>
+        <li>°C → K : °C + 273.15</li>
+        <li>K → °C : K − 273.15</li>
+        <li>°F → K : (°F − 32) × 5/9 + 273.15</li>
+        <li>K → °F : (K − 273.15) × 9/5 + 32</li>
+      </ul>
+
+      <h3>Tips</h3>
+      <ul>
+        <li>✔ Always enter a valid number.</li>
+        <li>✔ You can enter decimal values.</li>
+        <li>✔ Reset before entering a new temperature to avoid confusion.</li>
+      </ul>
+    </section>
+
+    <!-- Right Converter Card -->
+    <section class="converter-card">
+      <h2>Convert Your Temperature</h2>
+      <input type="number" id="temperature" placeholder="Enter Temperature">
+      <select id="unit">
+        <option value="C">Celsius</option>
+        <option value="F">Fahrenheit</option>
+        <option value="K">Kelvin</option>
+      </select>
+      <div class="btn-group">
+        <button id="convertBtn">Convert</button>
+        <button id="resetBtn">Reset</button>
+      </div>
+      <div class="result-box" id="result">🔍 Result will be shown here...</div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Temperature Converter | All rights reserved
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
