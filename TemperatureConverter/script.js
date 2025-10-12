@@ -1,4 +1,3 @@
-// Buttons
 document.getElementById("convertBtn").addEventListener("click", convertTemp);
 document.getElementById("resetBtn").addEventListener("click", resetForm);
 
